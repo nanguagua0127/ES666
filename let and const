@@ -18,3 +18,5 @@ const nan = {};
 nan.name = "nangua";
 console.log(nan);//{name:"nangua"}
 
+
+//PS:ES6除了添加let和const命令，后面章节还会提到，另外两种声明变量的方法：import命令和class命令。所以，ES6 一共有6种声明变量的方法。
