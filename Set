@@ -13,18 +13,36 @@
 		set.add(b);
 		console.log(set.size);//3
 		
+		Set实例操作方法：
+		add(value)：添加某个值，返回Set结构本身。
+		delete(value)：删除某个值，返回一个布尔值，表示删除是否成功。
+		has(value)：返回一个布尔值，表示该值是否为Set的成员。
+		clear()：清除所有成员，没有返回值。
+		
+		let s = new Set();
+		s.add(1).add(2).add(2);
+		// 注意2被加入了两次
+		s.size // 2
+		s.has(1) // true
+		s.has(2) // true
+		s.has(3) // false
+		s.delete(2);
+		s.has(2) // false
 		
 		
-		//forEach
-		[1, 2 ,3, 4].forEach(console.log);
-		console.log("forEach方法中的function回调支持3个参数，第1个是遍历的数组内容；第2个是对应的数组索引，第3个是数组本身。");
-		//例子
-		let abc = [1,2,3,4];
-		abc.forEach(function(value,index,array){
-			console.log(value);
-			console.log(index);
-			console.log(array);
-		})
+		
+		
+		PS:
+			//forEach
+			[1, 2 ,3, 4].forEach(console.log);
+			console.log("forEach方法中的function回调支持3个参数，第1个是遍历的数组内容；第2个是对应的数组索引，第3个是数组本身。");
+			//例子
+			let abc = [1,2,3,4];
+			abc.forEach(function(value,index,array){
+				console.log(value);
+				console.log(index);
+				console.log(array);
+			})
 		
 		
 </script>
