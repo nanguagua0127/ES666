@@ -1,0 +1,16 @@
+<script>
+
+		let set = new Set();
+		console.log(set.size);//0
+		set.add({});
+		console.log(set.size);//1
+		set.add({});
+		console.log(set.size);//2
+		let a = 1;
+		let b = 1;
+		set.add(a);
+		console.log(set.size);//3
+		set.add(b);
+		console.log(set.size);//3
+
+	</script>
